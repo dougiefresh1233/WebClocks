@@ -1,1 +1,6 @@
-window.alert(5 + 6);
+
+
+function buttonClick() {
+    window.alert("You pressed the button");
+    
+}
