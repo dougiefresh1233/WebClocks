@@ -1,7 +1,25 @@
 h1{
-    color:green
+    color:#000000
 }
 
-p{
-    color:blue
+input {
+    text-align: center;
+    width: 100px;
+    
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    max-width: 125px;
+    background-color: #CFCECF;
+    padding: 10px;
+    color: #46444C;
+    
+}
+
+
+body{
+    background-color: #7F7F83
+
 }
