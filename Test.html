@@ -1,23 +1,197 @@
 <!DOCTYPE html>
 <html>
+    
 <head>
     <link rel="stylesheet" type="text/css" href="css/style-sheet.css" media="screen" />
     <title>Web Clocks</title>
 </head>
-    
-<body>
 
-<h1>My First Heading</h1>
+    
+    
+    
+<body style="background-color:powderbule;">
 
-<p>My first paragraph.</p>
+
+<h1 style="font-size:50px">Click on Your Time Zone</h1>
     
-<textarea>
-Type Here    
-</textarea>
     
-<button onclick='buttonClick()'> Press this </button>    
+<p style="font-size:30px"> 
+    Your time zone is:
+    <div id="time_zone_select"
+         style="font-size:30px">
+        0
+    </div>
+</p>
     
-<script src="js/test.js"></script>
+<p style="font-size:30px"> 
+    Time zone differential: 
+    <div id="time_zone_diff"
+         style="font-size:30px">
+        0
+    </div>
+</p>
+
+
+<div id="view_time"
+     style="font-size:40px"
+     onload="get_time">
+</div>
+
+
+<img src="img/time_zones.jpg"
+     alt="World Map"
+     usemap='#worldmap'
+     style="width:2686px;height:1414px;">
+    
+<map name="worldmap">
+    <area id="-11"
+          shape="rect" 
+          coords="0,0,88,1414" 
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="-10"
+          shape="rect" 
+          coords="88,0,201,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="-9"
+          shape="rect" 
+          coords="201,0,313,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="-8"
+          shape="rect" 
+          coords="313,0,426,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="-7"
+          shape="rect" 
+          coords="426,0,538,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="-6"
+          shape="rect" 
+          coords="538,0,646,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="-5"
+          shape="rect" 
+          coords="646,0,759,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="-4"
+          shape="rect" 
+          coords="759,0,867,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="-3"
+          shape="rect" 
+          coords="867,0,980,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="-2"
+          shape="rect" 
+          coords="980,0,1092,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="-1"
+          shape="rect" 
+          coords="1092,0,1200,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="0"
+          shape="rect" 
+          coords="1200,0,1313,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="+1"
+          shape="rect" 
+          coords="1313,0,1425,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="+2"
+          shape="rect" 
+          coords="1425,0,1534,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="+3"
+          shape="rect" 
+          coords="1534,0,1642,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="+4"
+          shape="rect" 
+          coords="1642,0,1759,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="+5"
+          shape="rect" 
+          coords="1759,0,1867,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="+6"
+          shape="rect" 
+          coords="1867,0,1979,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="+7"
+          shape="rect" 
+          coords="1979,0,2092,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="+8"
+          shape="rect" 
+          coords="2092,0,2200,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="+9"
+          shape="rect" 
+          coords="2200,0,2313,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="+10"
+          shape="rect" 
+          coords="2313,0,2421,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="+11"
+          shape="rect" 
+          coords="2421,0,2533,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+    <area id="+12"
+          shape="rect" 
+          coords="2533,0,2590,1414"
+          onclick="set_time_zone(this.id)"
+          onmouseover="get_time_zone(this.id)">
+</map>
+
+
+
+
+<script>
+function get_time() {
+    document.getElementById("view_time") = new Date.getTime();
+}
+</script>
+
+
+<script>
+function set_time_zone(id) {
+    document.getElementById("time_zone_select").innerHTML = id;
+}
+</script>
+    
+
+<script>
+function get_time_zone(id) {
+    document.getElementById("time_zone_diff").innerHTML = document.getElementById("time_zone_select").innerHTML - id;
+    
+    document.getElementById("view_time").innerHTML = document.getElementById("user_time").innerHTML + document.getElementById("time_zone_diff").innerHTML;
+}
+</script>
+    
+
     
 </body>
 </html>
