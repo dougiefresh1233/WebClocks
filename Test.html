@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html>
+    
 <head>
     <link rel="stylesheet" type="text/css" href="css/style-sheet.css" media="screen" />
     <title>Web Clocks</title>
 </head>
+
+    
+    
+    
+<body style="background-color:powderbule;">
+
+
+<h1 style="font-size:50px">Click on Your Time Zone</h1>
+    
+    
+<p style="font-size:30px"> 
+    Your time zone is:
+    <div id="time_zone_select"
+         style="font-size:30px">
+        0
+    </div>
+</p>
+    
+<p style="font-size:30px"> 
+    Time zone differential: 
+    <div id="time_zone_diff"
+         style="font-size:30px">
+        0
+    </div>
+</p>
+
+
+<div id="view_time"
+     style="font-size:40px"
+     onload="get_time">
+</div>
+
+
+<img src="img/time_zones.jpg"
+     alt="World Map"
+     usemap='#worldmap'
+     style="width:2686px;height:1414px;">
     
 <body><center>
     
