@@ -5,19 +5,26 @@
     <title>Web Clocks</title>
 </head>
     
-<body>
+<body><center>
+    
+    <button onclick='addClock()'> Press this </button>
 
 <h1>My First Heading</h1>
 
-<p>My first paragraph.</p>
-    
-<textarea>
-Type Here    
-</textarea>
-    
-<button onclick='buttonClick()'> Press this </button>    
+<table id="clocks">
+    <tr>
+        <td colspan="4" align="center">Central Daylight Time</td>
+        <td></td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td><form> <input type="time" name="input_time" oninput="addClock()"> </form></td>
+        <td><form> <input type="time" name="input_time" oninput="timeCalc()"> </form></td>
+    </tr>
+</table>
     
 <script src="js/test.js"></script>
     
-</body>
+</center></body>
 </html>
