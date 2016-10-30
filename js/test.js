@@ -13,3 +13,9 @@ function addClock() {
         table.rows[table.rows.length - 1].insertCell().innerHTML = "<form> <input type=\"time\"> </form>";
     }
 }
+
+function buttonClick() {
+    window.alert("You pressed the button");
+    
+}
+

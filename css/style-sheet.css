@@ -1,5 +1,5 @@
 h1{
-    color:green
+    color:#000000
 }
 
 input {
@@ -10,4 +10,13 @@ input {
 
 td {
     text-align: center;
+}
+p{ /*Color scheme for each tile*/
+    background-color: #CFCECF;
+    color: #46444C
+}
+
+body{
+    background-color: #7F7F83
+
 }
