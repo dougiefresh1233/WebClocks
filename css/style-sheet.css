@@ -2,6 +2,15 @@ h1{
     color:#000000
 }
 
+input {
+    text-align: center;
+    width: 100px;
+    
+}
+
+td {
+    text-align: center;
+}
 p{ /*Color scheme for each tile*/
     background-color: #CFCECF;
     color: #46444C
@@ -9,4 +18,5 @@ p{ /*Color scheme for each tile*/
 
 body{
     background-color: #7F7F83
+
 }
