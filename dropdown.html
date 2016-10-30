@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style-sheet.css" media="screen" />
+    <title>Web Clocks</title>
+</head>
+    
+<body>
+
+    <h1>Select Timezone</h1>
+
+    <p>
+    Current time is <div id = "timeVal">6</div>
+    </p>
+    
+    <select id = "zone">
+        <option value = "-8">PDT (UTC-8)</option>
+        <option value = "-7">MDT (UTC-7)</option>
+        <option value = "-6">CDT (UTC-6)</option>
+        <option value = "-4">EDT (UTC-4)</option>
+    </select>
+    
+    <button onclick="onClick()">Submit</button>
+    
+    <div id = "outbox"></div>
+    
+    
+   
+    <script src="js/dropdown.js"></script>
+
+</body>
+</html>
